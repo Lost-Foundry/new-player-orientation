@@ -19,13 +19,16 @@ async function userPrompt(message, html, context) {
         console.log("New User logged in...");
         console.log("Unset showPrompt flag");
         const proceed = await foundry.applications.api.DialogV2.confirm({
-            content: "Looks like you haven't been given the scoop. Want to get to creating a character?",
+            content: `<p>Looks like you haven't been given the scoop. Want to get to creating a character?</p>\n\n<p>Slecting YES will open two tabs. Please move them around as you wish:</p><ol><li>Character Creation Tool</li><li>Player's Handbook Guide to Creating new Character. Use this guide to help you along the process.</li></ol>`,
             rejectClose: false,
             modal: true
         });
         console.log("Displayed dialog");
-        if ( proceed ) HEROMANCER.api.openWizard();
-        console.log("Tour done");
+        if ( proceed ) {
+            const creationpbh = await fromUuid("Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar");
+            creationpbh.sheet.render(true);
+            HEROMANCER.api.openWizard();
+        }
     }
 }
 

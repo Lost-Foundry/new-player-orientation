@@ -1,7 +1,7 @@
 {
   "id": "new-player-orientation",
   "title": "New Player Orientation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -28,5 +28,5 @@
   },
   "description": "",
   "download": "https://github.com/Lost-Foundry/new-player-orientation/archive/refs/heads/main.zip",
-  "module": "https://raw.githubusercontent.com/Lost-Foundry/new-player-orientation/refs/heads/main/module.json"
+  "manifest": "https://raw.githubusercontent.com/Lost-Foundry/new-player-orientation/refs/heads/main/module.json"
 }
