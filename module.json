@@ -26,5 +26,7 @@
       }
     ]
   },
-  "description": ""
+  "description": "",
+  "download": "https://github.com/Lost-Foundry/new-player-orientation/archive/refs/heads/main.zip",
+  "module": "https://raw.githubusercontent.com/Lost-Foundry/new-player-orientation/refs/heads/main/module.json"
 }
