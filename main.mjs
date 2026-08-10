@@ -4,7 +4,7 @@ Hooks.once("init", () => {
 
 let userLogon = [];
 let count = 0;
-const messageContent = `<h1>Welcome to Foundry. Please follow the tour</h1>`
+const messageContent = `<p>Welcome to Foundry. Please create your character.</p>\n<p>Once you are done you can poke around and see Foundry in all of it's glory.</p>`
 
 async function userPrompt(message, html, context) {
     count += 1;
